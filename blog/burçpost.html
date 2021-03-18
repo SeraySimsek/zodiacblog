@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burç Post</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/burçyorumlarım.css">
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+</style>
+<body class="first-info">
+<section>
+    <div class="container">
+        <div class="row" style="margin:200px auto">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 mbr-col-md-10">
+                    <div class="flight">
+                        <h2 class="fonts-style ie-bold type-title display-title">
+                        </h2>
+                        <div>
+                            {% for i in context %}
+                            <b>{{ i.title }}</b>
+                            <br><i>{{ i.zodiac_type }} - {{ i.date_added }}</i>
+                            <br>
+                            <b>Yorum:</b><br>{{ i.content }}
+                            <br>
+                            <hr>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+&nbsp;
+<br>
+&nbsp;
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,93 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>ikizler</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+     <link rel="stylesheet" type="text/css" href="/static/css/ikizler.css">
+    <link rel="stylesheet" type="text/css" href="/static/js/burç.js">
+
+
+</head>
+<body class="first-info" >
+<div class="container" >
+ <br><br>
+    <a href="{% url 'burclar' %}" ><img src="/static/images/circle-cropped.png"></a>
+        <div class="row" style="margin-left:28%">
+            <div class="col-md-8" >
+                <div class="card card-nav-tabs">
+                    <div class="card-header card-header-primary">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#profile" data-toggle="tab">
+                                            <i class="material-icons">grade</i>
+                                          İkizler Burç Özellikleri
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#messages" data-toggle="tab">
+                                            <i class="material-icons">chat</i>
+                                            Haftalık Burç Yorumu
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><div class="card-body ">
+                        <div class="tab-content text-center">
+                            <div class="tab-pane active" id="profile">
+                                <p><b>İkizler Burcunun Tarihi:</b>  21 Mayıs-20 Haziran</p>
+                                 <p><b>Gezegeni:</b>  Merkür</p>
+                                 <p><b>Rengi:</b>    Sarı</p>
+                                 <p><b>Şanslı Sayısı:</b>    5 ve 9</p>
+                                 <p><b>Şanslı Günü:</b>    Çarşamba</p>
+                                <p><b>Elementi:</b>    Hava</p>
+                            </div>
+                            <div class="tab-pane" id="messages">
+                                <p>
+                                    Paylaştığınız kaynaklarınız ufkunuzu genişletmeye devam edecek. Haftanın ilk gününü büyük
+                                    Satürn Jüpiter kavuşumuyla, hedeflediğiniz ufuk noktanızda karşılıyorsunuz.
+                                    Kurmak istediğiniz yeni yapı, hayatınızda bir dönüm noktası olacaktır. Önünüzü daha
+                                    net görebileceğiniz, kar ve zarar dengesini daha iyi anlayacağınız bir zaman dilimine giriyorsunuz.
+                                    Bu süre zarfında ortaklı işleriniz de oldukça önem kazanıyor. Bu ortaklıkta söz hakkı sahibi olmaktan
+                                    vazgeçmemelisiniz. Kurduğunuz her ikili ilişkide kendinize bir şeyler katıyor olsanız da temkinli davranmalısınız.
+                                    İyi niyetle kurulmayan bir ilişki içindeyseniz, acı öğretilerle de karşılaşmanız ihtimal dahilinde olabilir.
+                                    Yeni hayatınıza “merhaba” diyeceğiniz güzel bir hafta dileriz.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+&nbsp;
+
+</body>
+{% endblock  %}
+
+
+
+
+
+
+

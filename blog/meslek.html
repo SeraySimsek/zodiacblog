@@ -1,0 +1,88 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+<meta charset="utf-8">
+<title>EVET/HAYIR</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+<script type="text/javascript">
+		function sor(){
+			var cevap=parseInt(Math.random()*11);
+			if(cevap==0){
+				alert("Mühendis")
+			}
+			else if(cevap==1){
+				alert("Doktor")
+			}
+			else if(cevap==2){
+				alert("Savcı")
+			}
+			else if(cevap==3){
+				alert("Avukat")
+			}
+			else if(cevap==4){
+				alert("Çöpçü")
+			}
+			else if(cevap==5){
+				alert("Temizlikçi")
+			}
+			else if(cevap==6){
+				alert("Psikolog")
+			}
+			else if(cevap==7){
+				alert("Halkla İlişkiler Uzmanı")
+			}
+			else if(cevap==8){
+				alert("Simitçi")
+			}
+			else if(cevap==9){
+				alert("Akademisyen")
+			}
+			else if(cevap==10){
+				alert("Bakkal")
+			}
+			else if(cevap==11){
+				alert("Çiftçi")
+			}
+		}
+
+	</script>
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>
+
+<body class="first-info">
+<img src="../../../static/images/meslek.jpg" style="width:30%;height:40%; margin-left:35%"/>
+		<div class="row" style="height:100px ; margin-left:28% " >
+            <form action=""><label for="from" style="color: white;font-size:30px;margin-top: 1.2rem">Burcunuz</label>
+            <select id="from" name="from" style="width: 10rem;height:2.5rem; margin-left:5px;background-color:#c8a2c8">
+                <option value="koç">Koç</option>
+                <option value="boğa">Boğa</option>
+                <option value="ikizler">İkizler</option>
+                <option value="yengeç">Yengeç</option>
+                <option value="aslan">Aslan</option>
+                <option value="başak">Başak</option>
+                <option value="terazi">Terazi</option>
+                <option value="akrep">Akrep</option>
+                <option value="yay">Yay</option>
+                <option value="oğlak">Oğlak</option>
+                <option value="kova">Kova</option>
+                <option value="balık">Balık</option>
+            </select>
+            <button class="btn btn-lg btn-primary" style="color: #003366;margin-left: 4.5rem;" onClick="sor()">Bana Uygun Mesleği Göster</button>
+            </form>
+
+        </div>
+<br><br><br><br>
+</body>
+{% endblock %}

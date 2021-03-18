@@ -1,0 +1,176 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+	 <title>Etkinlikler</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+    body
+{
+	background:#00bcd4;
+}
+
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.burç-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.burç-main img
+{
+	border-radius:50%;
+	margin-bottom:30px;
+	width: 100px;
+}
+
+.burç-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.burç-main p
+{
+	margin-bottom:0;
+}
+
+.burç-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+
+}
+
+.burç-front
+{
+
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:10;
+	background:#c8a2c8;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.burç-main:hover .burç-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.burç-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+	box-shadow: 2px 2px 5px 5px #eee;
+}
+
+/burç-main/
+
+
+
+</style>
+<body class="first-info" >
+<br><br>
+
+	<div class="container">
+	<div class="row">
+
+	<div class="col-lg-4" >
+	<div class="burç-main" style="height:100%">
+
+	<div class="burç-front" >
+	<img src="/static/images/soru.jpg" style="height: 370px; width: 300px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back" >
+	<span>
+	<br><br>
+		<a class href="{% url 'bilgitesti' %}">
+		<center><p><font  size="5" color="maroon"><b><i>Bilgi Testi <br></i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+
+	<div class="col-lg-4">
+	<div class="burç-main" style="height:100%">
+
+	<div class="burç-front">
+	<img src="/static/images/soruişareti.jpeg" style="height: 370px; width: 300px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'evethayır' %}">
+		<center><p><font  size="5" color="maroon"><b><i>Evet/Hayır Testi <br></i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+
+	<div class="col-lg-4">
+	<div class="burç-main" style="height:100%">
+
+	<div class="burç-front">
+	<img src="/static/images/çember.jpeg" style="height: 370px; width: 300px;"  class="img-fluid" /><br>
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'meslek' %}">
+		<center><p><font  size="5" color="maroon"><b><i>Burcuna Göre Hangi Mesleği Seçmelisin?? <br> </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+		<br><br><br>
+
+</div>
+	</div>
+<br><br><br>
+</body>
+{% endblock  %}

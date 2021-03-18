@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bilgitesti</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/burçyorumlarım.css">
+
+    <script type="text/javascript">
+	function hesapla(){
+		var dogru=0;
+
+			if(document.getElementById("babil").checked){
+			   dogru++
+			   }
+			if(document.getElementById("c121210").checked){
+			   dogru++
+			   }
+			if(document.getElementById("tüm").checked){
+			   dogru++
+			   }
+			if(document.getElementById("merkur").checked){
+			   dogru++
+			   }
+			if(document.getElementById("koc").checked){
+			   dogru++
+			   }
+			if(document.getElementById("ates").checked){
+			   dogru++
+			   }
+			if(document.getElementById("sonbahar").checked){
+			   dogru++
+			   }
+			if(document.getElementById("yer").checked){
+			   dogru++
+			   }
+			if(document.getElementById("ekim").checked){
+			   dogru++
+			   }
+			if(document.getElementById("yilan").checked){
+			   dogru++
+			   }
+
+			if(dogru==10 || dogru==9){
+				window.alert("Sen burçların KING'i olmuşsun. Bu kadar iyi olduğunu bilmiyordum. Bizimle çalışmaya ne dersin :) ");
+				}
+			else if(dogru==8 || dogru==7){
+				window.alert("Baya iyisin :) ");
+				}
+			else if(dogru==6 || dogru==5){
+				window.alert("Burçlar hakkında ortalama bir bilgiye sahipsin :) ");
+				}
+			else if(dogru==4 || dogru==3){
+				window.alert("Fena değilsin:) ");
+				}
+			else if(dogru==2 || dogru==1){
+				window.alert("Birazcık daha çalışman lazım :) ");
+				}
+			else if(dogru==0){
+				window.alert("Burçlar hakkında bilgi sahibi olabilmek için daha çok çalışman lazım. Burcun B sini bilmiyorsun. Neyse ki biz varız :) ");
+				}
+	}
+</script>
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+</style>
+<body class="first-info" >
+<div  style="color:white;">
+<section>
+<div class="container">
+    <br><br><br>
+<h1>TEMEL BURÇ BİLGİN HANGİ SEVİYEDE?</h1>
+	<p>Hepimiz az ya da çok burçlar hakkında bilgi sahibiyiz. En azından etkilerini takip ediyoruz. Bakalım, siz burçlar hakkında ne kadar bilgi sahibisiniz!</p></br>
+
+	<form>
+	<p>1. Astrolojinin temelini oluşturan, yıldızlara isimlerini veren ve ilk Astrolojik kayıtların sahibi topluluk hangisidir?</p>
+		<ul>
+		  <li> <input type="radio" name="s1" value="A" id="misir"/>A)Mısırlılar</li>
+		  <li> <input type="radio" name="s1" value="B" id="kalde"/>B)Kaldeliler</li>
+		  <li> <input type="radio" name="s1" value="C" id="babil"/>C)Babiller</li>
+		</ul>
+<br>
+	<p>2. Yıldız Haritası hangilerinden oluşur? </p>
+		<ul>
+		  <li> <input type="radio" name="s2" value="A" id="c121212"/>A)12 Burç - 12 Ev - 12 Gezegen</li>
+		  <li> <input type="radio" name="s2" value="B" id="c121210"/>B)12 Burç - 12 Ev - 10 Gezegen</li>
+		  <li> <input type="radio" name="s2" value="C" id="121010"/>C)12 Burç - 10 Ev - 10 Gezegen</li>
+		</ul>
+<br>
+	<p>3. Merkür retrosu hangi burçları etkiler? </p>
+		<ul>
+		  <li> <input type="radio" name="s3" value="A" id="tüm"/>A)Tüm burçları</li>
+		  <li> <input type="radio" name="s3" value="B" id="toprakhava"/>B)Toprak ve hava grubunu</li>
+		  <li> <input type="radio" name="s3" value="C" id="atessu"/>C)Ateş ve su grubunu</li>
+		</ul>
+<br>
+	<p>4. İkizler burcunun yönetici gezegeni hangisidir? </p>
+		<ul>
+		  <li> <input type="radio" name="s4" value="A" id="merkur"/>A)Merkür</li>
+		  <li> <input type="radio" name="s4" value="B" id="jupiter"/>B)Jüpiter</li>
+		  <li> <input type="radio" name="s4" value="C" id="uranus"/>C)Uranüs</li>
+		</ul>
+<br>
+	<p>5. Yıldız Haritası'nda ilk burç olarak kabul edilen burç hangisidir? </p>
+		<ul>
+		  <li> <input type="radio" name="s5" value="A" id="kova"/>A)Kova</li>
+		  <li> <input type="radio" name="s5" value="B" id="yay"/>B)Yay</li>
+		  <li> <input type="radio" name="s5" value="C" id="koc"/>C)Koç</li>
+		</ul>
+<br>
+	<p>6. Aslan burcu hangi burç grubundandır? </p>
+		<ul>
+		  <li> <input type="radio" name="s6" value="A" id="hava"/>A)Hava</li>
+		  <li> <input type="radio" name="s6" value="B" id="toprak"/>B)Toprak</li>
+		  <li> <input type="radio" name="s6" value="C" id="ates"/>C)Ateş</li>
+		</ul>
+<br>
+	<p>7. Güneş'in Terazi burcuna girmesiyle hangi mevsim başlar?</p>
+		<ul>
+		  <li> <input type="radio" name="s7" value="A" id="ilkbahar"/>A)İlkbahar</li>
+		  <li> <input type="radio" name="s7" value="B" id="kis"/>B)Kış</li>
+		  <li> <input type="radio" name="s7" value="C" id="sonbahar"/>C)Sonbahar</li>
+		</ul>
+<br>
+	<p>8. Yükselen burcunuzu bulabilmek için hangisini bilmeniz gerekmez? </p>
+		<ul>
+		  <li> <input type="radio" name="s8" value="A" id="yer"/>A)Doğum yeri</li>
+		  <li> <input type="radio" name="s8" value="B" id="tarih"/>B)Doğum tarihi</li>
+		  <li> <input type="radio" name="s8" value="C" id="saat"/>C)Doğum saati</li>
+		</ul>
+<br>
+	<p>9. Akrep burcu hangi tarihler arasında doğan insanların burcudur?</p>
+		<ul>
+		  <li> <input type="radio" name="s9" value="A" id="agustos"/>A)23 Ağustos - 22 Eylül</li>
+		  <li> <input type="radio" name="s9" value="B" id="eylul"/>B)23 Eylül - 22 Ekim</li>
+		  <li> <input type="radio" name="s9" value="C" id="ekim"/>C)23 Ekim - 21 Kasım</li>
+		</ul>
+<br>
+	<p>10. Geldik son soruya: NASA'nın 2016 yılında açıkladığı yeni burç tarihlerine göre 13.burç olarak eklenen burç hangisidir? </p>
+		<ul>
+		  <li> <input type="radio" name="s10" value="A" id="ayi"/>A)Ayı</li>
+		  <li> <input type="radio" name="s10" value="B" id="fare"/>B)Fare</li>
+		  <li> <input type="radio" name="s10" value="C" id="yilan"/>C)Yılan</li>
+		</ul>
+
+		</br></br></br>
+
+        <input type="button" value="HESAPLA" onClick="hesapla()">
+	</form>
+</div>
+</section>
+</div>
+</body>
+<br><br><br><br>
+{% endblock %}

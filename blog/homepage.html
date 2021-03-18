@@ -1,0 +1,329 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <title>Homepage</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+body{
+	background:#00bcd4;
+}
+h1{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+.our-team-main{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+.our-team-main img{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+.our-team-main h3{
+	font-size:20px;
+	font-weight:700;
+}
+.our-team-main p{
+	margin-bottom:0;
+}
+.team-back{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+
+}
+.team-front{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#c8a2c8;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+
+}
+.our-team-main:hover .team-front{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+.our-team-main:hover{
+	border-color:#777;
+	transition:0.5s;
+	box-shadow: 2px 2px 5px 5px #eee;
+}
+
+
+
+</style>
+<br> <br>
+<body class="first-info">
+{% if context == 'F' %}
+{% if fortune_telling_counter == 0 %}
+<div style="width:320px;padding: 10px;border: 5px solid #660099;margin: 0;color:white;margin-left:200px">
+    <center>Şuan hiç bekleyen fal yok</center>
+</div>
+
+{% else %}
+<div style="width:320px;padding: 10px;border: 5px solid #660099;margin: 0;color:white;margin-left:200px">
+    <center><a href="/YeniGonderi" style="color:white"> Bekleyen Falları Yorumla </a></center>
+</div>
+
+{% endif %}
+{% endif %}
+
+{% if context == 'B' %}
+<div style="width:320px;padding: 10px;border: 5px solid #660099;margin: 0;color:white;margin-left:200px">
+    <center><a href="/YeniGonderi"> Burç Yorumu Gönder </a></center>
+</div>
+{% endif %}
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/burclar.jpg" style="height: 130px; width: 200px;" class="img-fluid"/>
+
+                    <h3>Burçlar</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'burclar' %}">
+		<center><p><font size="5"
+                         color="maroon"><b><i>Burçların Dünyasına Giriş Yapmak İstiyorsan Doğru Yerdesin.</i></b></font></p></center>
+</a>
+	</span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/tarot2.jpg" style="height: 130px; width: 200px;" class="img-fluid"/>
+                    <h3>Tarot Falı</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+		<br>
+		<a class href="{% url 'tarot' %}">
+		<center><p><font size="5" color="maroon"><b><i>Tarot Falına Baktırmak İstiyorsan Seni Burada Bekliyorum</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/burç hesaplama.jpg" style="height: 130px; width: 200px;"
+                         class="img-fluid"/>
+                    <h3>Burç Hesaplama</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+		<br>
+		<a class href="{% url 'burchesaplama' %}">
+	<center><p><font size="5"
+                     color="maroon"><b><i>Hala Burcunu Bilmiyor Musun? Hadi Gel Birlikte Öğrenelim</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/yükselenburç.png" style="height: 130px; width: 200px;" class="img-fluid"/>
+                    <h3>Yükselen Hesaplama</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+		<br><br>
+		<a class href="{% url 'yukselenhesaplama' %}">
+		<center><p><font size="5"
+                         color="maroon"><b><i>Peki Ya Yükselen Burcunu? Hadi Gel Onu da Öğrenelim</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/burcuyumu.jpg" style="height: 130px; width: 200px;" class="img-fluid"/>
+                    <h3>Burç Uyumu</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+		<br><br>
+		<a class href="{% url 'burcuyumu' %}">
+	<center><p><font size="5" color="maroon"><b><i>Burç Uyumu Çok Önemli. Uyumunuzu Öğrenmek İster Misin?</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/astrolojı tarihi.jpg" style="height: 130px; width: 200px;"
+                         class="img-fluid"/>
+                    <h3>Astroloji Tarihi</h3>
+                </div>
+                <div class="team-back">
+	<span>
+		<br><br>
+		<a class href="{% url 'astrolojitarihi' %}">
+	<center><p><font size="5" color="maroon"><b><i>Astroloji Tarihini Merak Ediyor Musun?</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="/static/images/testler.png" style="height: 130px; width: 200px; " class="img-fluid"/>
+                    <h3>Etkinlikler</h3>
+                </div>
+                <div class="team-back">
+	<span>
+		<br><br>
+		<a class href="{% url 'testler' %}">
+	<center><p><font size="5" color="maroon"><b><i>İçeriklerimize Göz Atmak İster Misin?</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        {% if user.is_authenticated %}
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="../../../static/images/indir.jpg" style="height: 130px; width: 200px;" class="img-fluid"/>
+
+                    <h3>Kahve Falı</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'kahveFalı' %}">
+		<center><p><font size="4" color="maroon"><b><i>Kahve Fincanının Fotoğraflarını Yükleyip Yorumlamamamız Üzere Gönderebilirsin.</i></b></font></p></center>
+</a>
+	</span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="our-team-main">
+
+                <div class="team-front">
+                    <img src="../../../static/images/shoppingcart.jpg" style="height: 130px; width: 200px;"
+                         class="img-fluid"/>
+
+                    <h3>Mağaza</h3>
+                </div>
+
+                <div class="team-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'shopping' %}">
+		<center><p><font size="4" color="maroon"><b><i>Tarot Kartları, Burç Kitapları İlgini Çekiyorsa Satın Almaya Ne Dersin?</i></b></font></p></center>
+</a>
+	</span>
+
+                </div>
+
+            </div>
+        </div>
+
+        {% else %}
+        <div class="col-lg-4" style="" ;>
+            <div class="our-team-main">
+                <div class="team-front">
+                    <img src="/static/images/unnamed.gif" style="height: 130px; width: 200px; " class="img-fluid"/>
+                    <h3>Bize Katıl!</h3>
+                </div>
+                <div class="team-back">
+	<span>
+		<br><br>
+		<a class href="{% url 'register' %}">
+	<center><p><font size="4" color="maroon"><b><i>Eğer sen de üyelik avantajlarından faydalanmak istersen bize katıl. Ücretsiz kahve falı, sana özel günlük, haftalık burç yorumları ve hoşuna gidecek kitaplar seni bekliyor.</i></b></font></p></center>
+		</a>
+	</span>
+                </div>
+
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+<br><br><br><br>
+</body>
+
+{% endblock content %}

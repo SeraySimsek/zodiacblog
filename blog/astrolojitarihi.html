@@ -1,0 +1,59 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+<title>Astrolojitarihi</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+</style>
+
+<body class="first-info" >
+<br><br><br>
+<div class="container">
+    <div class="row" style="margin-left: 8% !important;">
+        <div class="col-md-10 blogShort">
+            <h1> <font  size="6" style="margin-left: 33% !important;"color="white"><b><i>Astroloji Tarihi</i></b></font></h1>
+            {% include 'blog/carausel.html' %}
+            <br><br>
+            <article>
+                <p><font size="3" color="white"><i>Astrolojinin tarihi binlerce yıl öncesine dayanmaktadır. Çok eski yıllarda ışığın günümüzdeki gibi kullanılamamasından dolayı insanlar gökyüzünü daha net görme imkanına sahiptiler.  Gece öylesine karanlık, yıldızlar o derece parlak ve yakındı ki bugünün teknolojisine sahip olmamalarına rağmen bir çok göksel bilgiye gözlem yaparak ulaşabildiler.  Zaman içerisinde birçok farklı kültür ve topluluk çeşitli araştırma ve gelişmeler ile edindikleri astrolojik verileri günümüze kadar getirdiler
+ Roma, Çin, Yunan, Maya uygarlıkları gökyüzündeki yıldızları inceleyerek kendi toplumlarında astrolojinin önce tohumlarını attılar ve bir tarih meydana getirdiler. Geçmişe göz attığımızda bir çok belirsizliğe rağmen astrolojinin ilk kez Mezopotamya’da ortaya çıktığına dair veriler elde ederiz. Mezopotamyalılar gökyüzündeki yıldız ve gezegenlere tanrı isimleri vererek onların gerçek tanrılar olduklarına inandılar.
+M.Ö. 2122 ile 2102 yılları arasında Sümer yazıtlarında yıldızlarla ilgili kehanetler bulundu. Bilinen en eski astrolojik belge ise Enuma Anu Enlil M.Ö. 1800-1500 tarihleri arasında yazılmıştır, 7.000 göksel işaret ve 70 kil tabletten oluşmaktadır. Bu tabletlere bakarak o zamanki Astrologların göksel değişimlerin yeryüzü ile eşleştiğini keşfettikleri görülmektedir.
+M.Ö. 1600 yıllarından zamanımıza ulaşan diğer belgeler ise; Babil Kralı Amisaduka döneminden gelen Venüs Tabletleri’dir.
+M.Ö. 1000 yıllarına gelindiğinde ise; Mezopotamya’da yaşayan Kabilliler tarafından Mul Apin; ilk yıldız kataloğu oluşturuldu ve bu katalogda ekvatora paralel olan 3 geniş kuşak ve ekliptik üzerinde 17 takımyıldızından bahsedildi.
+M.Ö. 747 yılında ilk defa Güneş Tutulması Babiller tarafından hesaplandı ve ilk Astronomi Günlüğü ise M.Ö. 652 yılında hazırlandı. Babilliler gezegenlerin dönüş zamanlarını ve gelecekte hangi konumda olacaklarını hesaplayacak konuma kadar geldiler. O dönemde astrolojinin kullanış amacı; krallığın gidişatını belirlemek için göklerden edinilen bilgileri kullanmaktı.
+İlk astrologların Babil ve Asur döneminde yaşayan Babur Rahipleri oldukları bilinmektedir. Bu rahipler gerçekten de Güneş ve Ay Tutulmalarını, matematiksel hesapları doğru yaparak Güneş, Ay ve gezegenlerin döngülerini, Ay’ın bir sene içinde oniki kez döndüğünü hesaplayarak yılı on ikiye bölmeyi dahi keşfettiler.
+İlerleyen zamanla birlikte Astrologlar yaptıkları incelemeler neticesinde gökyüzündeki gezegenler hakkında daha fazla bilgiler edinmeye başladılar. Bu bilgiler Babillilerden (M.Ö. 587-539) Musevilere, onlardan da Babili fetheden (M.Ö. 539) Perslere, Perslerden (M.Ö. 525-404) Mısırlılara ve (M.Ö. 509) Hintlilere kadar iletildi.
+M.Ö. 729 yılında Babil’i ele geçiren Sümerler, önce takımyıldızlarının sayısını 18 olarak hesapladılar, fakat M.Ö. 600 yıllarında Zodyak’taki takımyıldızlarının sayısının 12 olarak belirlemek için bunların bir kısmını birbirleri ile birleştirdiler. Asurlular gezegenlere tanrıların evi olarak bakıyor ve onları buna göre isimlendiriyorlardı. Diğer medeniyetler de Yunanlılar ve Romalılar, aynı Asurlular gibi gezegenlere tanrılarının isimlerini verdiler.
+İlk doğum horoskop uygulaması ise; M.Ö. 409 yılında Babilli astrologlar tarafından Babil Kralı Shuma-Usur’un haritası yorumlanarak yapıldı. O zaman haritanın yükselen burca göre analiz edilmesi gerektiği daha keşfedilmemişti, bu temel bilgi daha sonraki dönemlerde kullanılmaya başlandı.
+İlk yıldız kataloğu ise; M.Ö. 190 yılında Hiparkus tarafından oluşturularak “Ekinoksların Kayması” açıklandı.
+Mısırlılar ve Firavun’lar astronomi ile büyük ölçüde ilgileniyorlardı. Piramitleri, tapınakları vb. sabit yıldızlar doğrultusunda inşa ettiler. Persler’in Mısır’ı fethetmesi ve sonrasında Büyük İskender’in ele geçirmesi astroloji ile ilgili belgelerin Mısır’da yayılmasını sağladı. Böylece Mısırlılar astroloji ile alakalı bilgilerini daha da arttırdılar ve geliştirdiler. Ünlü Yunanlı Astrolog Vettius Valens eserlerinde Mısırlıların astroloji bilgilerinden faydalandı.
+Romalılar ve Yunanlılar da antik dönemde evreni gözlemleyerek doğadaki uyum ve düzeni incelemeye ve bunlardan sonuçlar çıkarmaya yöneldiler. Gözlemle edinilen bilgiler neticesinde horoskop astrolojisinin gelişmesinin kapılarını açtılar. M.Ö 460-377 yıllarında Hipokrates evrendeki 4 elementi ve bunlara karşılık gelen karakterleri açıkladı.
+M.Ö. 250 yılları civarında Kildanili astrologlar ve Babil’li rahip bilgin Berossus Yunanistan’nın Kos adasında ilk astroloji okulunu kurdular. M.Ö. 200 yıllarında Rahip Petosiris ve Firavun Nechepso astrolojik elyazmalarını derlediler. O dönemdeki Horoskop zamanımızdan çok farklıydı. Değişik kültürlerden günümüze kadar gelerek bugünkü halini aldı.
+Mitoloji ile astrolojinin birlikteliği M.Ö. 5 ve 4. Yüzyıllarda başlamış, hem Yunan hem Roma Mitolojisi’nde gezegenler ve tanrıların özellikleri bir tutulmuştu. Yunan filozof ve bilim adamları bugünün astrolojisine ışık tutacak birçok çalışmalar yaptılar. Bilinen en önemli Yunan filozofları Eudoxus, Anaximender, Thales, Pisagor, Heraclitus, Empedocles, Hipokrates’tir. Babil’liler Dünya ve gezegenler arasında sayısal ilişkilere, onların olumlu olumsuz yapılarına göre değerlendirme yaparken, Yunanlılar daha çok göksel cisimler arasındaki geometrik hesaplamalara ve hareketlere önem verdiler. Ayrıca Yunanlılar gezegenleri Dünya’dan uzaklıklarına göre sıraladılar.
+
+</i></font></p>
+            </article>
+
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+<br><br><br><br><br><br>
+
+{% endblock content %}
+

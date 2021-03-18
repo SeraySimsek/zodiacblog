@@ -1,0 +1,262 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+	 <title>Tarot Falı</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script  >
+var kart1Image;
+window.addEventListener("load", start, false);
+
+function start() {
+	var button = document.getElementById("tarotButton");
+	button.addEventListener("click", change, false);
+	kart1Image=document.getElementById("tarotkarti");
+}
+function change(){
+	setImage(kart1Image);
+}
+function setImage (kartImg) {
+	var kartValue = Math.floor(1+Math.random()*158);
+	kartImg.setAttribute("src", "/static/tarot/"+kartValue+".PNG");
+
+}
+
+</script>
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+.bosluk{
+	text-align:center;
+	padding-left:200px;
+	padding-right:200px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+	}
+
+.table{
+	border:5px dashed #99F;
+	width:auto;
+	}
+</style>
+
+<body class="first-info" >
+		<h1 align="center" style="color:white">TEK KART TAROT FALI</h1>
+		<p class="bosluk">Tek kart tarot açılımı, sorduğunuz soruya olumlu ya da olumsuz NET bir yanıt almak için bakılır. Önemli bir kara aşamasındaysanız; ikilemde kaldığınız ya da aklınızı kurcalayan konular var ise fikir vermesi açısından bu açılım tercih edilir.</br> Cevabı EVET ya da HAYIR olan bir soruya odaklanın ve ardından kartınızı seçiniz.</p>
+
+	<table align="center" class="table">
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+		<tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+       <tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+        <tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+       <tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+        <tr>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+			<td align="center"> <img src="/static/images/tarotkarti.png" height="100" width="80">
+            					</br> <input type="radio" name="s1"/> </td>
+		</tr>
+	</table>
+<div align="center">
+    <form action="#">
+		<input id="tarotButton"type="button" value="Kartımı Gönder" />
+   </form>
+	<form action="#">
+
+</form>
+
+   <br/>
+	<img id="tarotkarti" src="/static/tarot/unnamed.jpg"  alt="kart yorumu" >
+
+</div>
+
+<br><br><br><br><br>
+</body>
+{% endblock  %}

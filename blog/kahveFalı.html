@@ -1,0 +1,85 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+<title>kahvefalı</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+</style>
+
+<body class="first-info" >
+<br><br><br><br><br><br>
+      <div class="row" style="margin-left: 20% !important; color:white">
+
+              <form action="gonder.php" method="post" enctype="multipart/form-data">
+           <div class="col-md-4" style="float: left">
+              <img id="onizleme1" src="../../../static/images/camera.jpeg" style="width: 12rem;height: 12rem;border-radius: 5px; ">
+             <br><br>
+           <input type="file" accept="image/*" style="" onchange="loadFile1(event)">
+               <script>
+                var loadFile1 = function(event) {
+                var onizleme1 = document.getElementById('onizleme1');
+                onizleme1.src = URL.createObjectURL(event.target.files[0]);
+                        };
+            </script>
+
+               </div>
+                  <div class="col-md-4"  style="float: left">
+              <img id="onizleme2" src="../../../static/images/camera.jpeg" style="width: 12rem;height: 12rem; border-radius: 5px; ">
+                 <br><br>
+           <input type="file" value="Foto Seç" accept="image/*" style="" onchange="loadFile2(event)">
+                        <script>
+                var loadFile2 = function(event) {
+                var onizleme2 = document.getElementById('onizleme2');
+                onizleme2.src = URL.createObjectURL(event.target.files[0]);
+                        };
+            </script>
+               </div>
+                  <div class="col-md-4"  style="float: left ;  ">
+              <img id="onizleme3" src="../../../static/images/camera.jpeg" style="width: 12rem;height: 12rem; border-radius: 5px;  ">
+                  <br><br>
+           <input type="file"  accept="image/*" class=""  onchange="loadFile3(event)">
+
+                  <script>
+                var loadFile3 = function(event) {
+                var onizleme3 = document.getElementById('onizleme3');
+                onizleme3.src = URL.createObjectURL(event.target.files[0]);
+                        };
+            </script>
+               </div>
+              </form>
+            </div>
+           <div class="row" style="margin-left: 20% !important; color:white">
+               <br><br><br>
+                  <label for="from" style="color: white;font-size:30px;margin-top: 4rem;">Fal Konusu</label>
+            <select id="from" name="from" style="width: 10rem;height:2.5rem; margin-left:5px;background-color:#c8a2c8;margin-top: 4rem;">
+                <option value="sağlık">Sağlık</option>
+                <option value="aşk">Aşk</option>
+                <option value="para">Para</option>
+                <option value="genel">Genel</option>
+
+            </select>
+               <br><br><br>
+               <div class="col-12"><input type="submit" value="Gönder" style="margin-top: 3rem" ></div>
+           </div>
+
+
+            </form>
+
+<br>
+
+
+</body>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+{% endblock content %}

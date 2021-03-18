@@ -1,0 +1,334 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+	 <title>Burçlar</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+    body
+{
+	background:#00bcd4;
+}
+
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.burç-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.burç-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.burç-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.burç-main p
+{
+	margin-bottom:0;
+}
+
+.burç-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+
+}
+
+.burç-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#c8a2c8;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.burç-main:hover .burç-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.burç-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+	box-shadow: 2px 2px 5px 5px #eee;
+}
+
+/burç-main/
+
+
+
+</style>
+<body class="first-info" >
+<br><br>
+
+	<div class="container">
+	<div class="row">
+
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/koç.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'koc' %}">
+		<center><p><font  size="5" color="maroon"><b><i> KOÇ  <br>21 Mart- 20 Nisan</i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/boğa.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'boga' %}">
+		<center><p><font  size="5" color="maroon"><b><i> BOĞA  <br>21 Nisan – 21 Mayıs </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/ikizler.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'ikizler' %}">
+		<center><p><font  size="5" color="maroon"><b><i> İKİZLER  <br> 21 Mayıs - 21 Haziran </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/yengeç.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'yengeç' %}">
+		<center><p><font  size="5" color="maroon"><b><i> YENGEÇ  <br> 22 Haziran - 22 Temmuz </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/aslan.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'aslan' %}">
+		<center><p><font  size="5" color="maroon"><b><i> ASLAN  <br> 23 Temmuz - 22 Ağustos </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/başak.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'başak' %}">
+		<center><p><font  size="5" color="maroon"><b><i> BAŞAK  <br> 23 Ağustos - 22 Eylül  </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/terazi.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'terazi' %}">
+		<center><p><font  size="5" color="maroon"><b><i> TERAZİ  <br> 23 Eylül - 23 Ekim  </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/akrep.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'akrep' %}">
+		<center><p><font  size="5" color="maroon"><b><i> AKREP  <br> 23 Ekim- 21 Kasım  </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/yay.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'yay' %}">
+		<center><p><font  size="5" color="maroon"><b><i> YAY  <br> 22 Kasım - 21 Aralık  </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/oğlak.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'oglak' %}">
+		<center><p><font  size="5" color="maroon"><b><i> OĞLAK  <br> 22 Aralık - 19 Ocak  </i></b></font></p></center>
+</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/kova.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+		<a class href="{% url 'kova' %}">
+		<center><p><font  size="5" color="maroon"><b><i> KOVA  <br> 20 Ocak - 18 Şubat  </i></b></font></p></center>
+		</a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+	<div class="col-lg-4">
+	<div class="burç-main">
+
+	<div class="burç-front">
+	<img src="/static/images/balık.jpg" style="height: 150px; width: 200px;"  class="img-fluid" />
+	</div>
+
+	<div class="burç-back">
+	<span>
+	<br><br>
+        <a class href="{% url 'balık' %}">
+		<center><p><font  size="5" color="maroon"><b><i> BALIK  <br> 19 Şubat - 20 Mart  </i></b></font></p></center>
+        </a>
+	</span>
+	</div>
+
+	</div>
+	</div>
+
+</div>
+	</div>
+</body>
+
+{% endblock  %}

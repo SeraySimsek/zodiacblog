@@ -1,0 +1,51 @@
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Burçblok</title>
+</head>
+<body >
+<div class="row" >
+<ul class="nav">
+  <li class="nav-item">
+  <a class="nav-link active" href="{% url 'koc' %}" style="color:white" >Koç</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'boga' %}" style="color:white">Boğa</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'ikizler' %}" style="color:white">İkizler</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'yengeç' %}" style="color:white">Yengeç</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'aslan' %}" style="color:white">Aslan</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'başak' %}" style="color:white">Başak</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'terazi' %}" style="color:white">Terazi</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'akrep' %}" style="color:white">Akrep</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'yay' %}" style="color:white">Yay</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'oglak' %}" style="color:white">Oğlak</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'kova' %}" style="color:white">Kova</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{% url 'balık' %}" style="color:white">Balık</a>
+  </li>
+
+</ul>
+    </div>
+
+</body>
+{% endblock %}

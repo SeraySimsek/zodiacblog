@@ -1,0 +1,275 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+	 <title>Burç Uyumu </title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+
+    <script >
+var kart1Image;
+window.addEventListener("load", start, false);
+
+function start() {
+	var button = document.getElementById("uyumButton");
+	button.addEventListener("click", change, false);
+	kart1Image=document.getElementById("uyumkarti");
+}
+function change(){
+	setImage(kart1Image);
+}
+function setImage (kartImg) {
+    document.form1.burç1.selectedIndex;
+    document.form1.burç2.selectedIndex;
+    if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/koçkoç.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/koçboğa.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/koçikizler.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/koçyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/koçaslan.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/koçbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/koçterazi.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/koçakrep.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/koçyay.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/koçoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/koçkova.png");}
+	if(document.form1.burç1.selectedIndex == 1 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/koçbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/boğakoç.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/boğaboğa.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/boğaikizler.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/boğayengeç.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/boğaaslan.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/boğabaşak.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/boğaterazi.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/boğaakrep.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/boğayay.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/boğaoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/boğakova.png");}
+	if(document.form1.burç1.selectedIndex == 2 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/boğabalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/ikizlerkoç.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/ikizlerboğa.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/ikizlerikizler.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/ikizleryengeç.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/ikizleraslan.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/ikizlerbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/ikizlerterazi.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/ikizlerakrep.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/ikizleryay.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/ikizleroğlak.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/ikizlerkova.png");}
+	if(document.form1.burç1.selectedIndex == 3 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/ikizlerbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/yengeçkoç.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/yengeçboğa.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/yengeçikizler.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/yengeçyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/yengeçaslan.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/yengeçbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/yengeçterazi.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/yengeçakrep.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/yengeçyay.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/yengeçoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/yengeçkova.png");}
+	if(document.form1.burç1.selectedIndex == 4 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/yengeçbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/aslankoç.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/aslanboğa.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/aslanikizler.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/aslanyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/aslanaslan.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/aslanbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/aslanterazi.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/aslanakrep.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/aslanyay.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/aslanoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/aslankova.png");}
+	if(document.form1.burç1.selectedIndex == 5 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/aslanbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/başakkoç.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/başakboğa.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/başakikizler.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/başakyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/başakaslan.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/başakbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/başakterazi.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/başakakrep.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/başakyay.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/başakoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/başakkova.png");}
+	if(document.form1.burç1.selectedIndex == 6 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/başakbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/terazikoç.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/teraziboğa.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/teraziikizler.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/teraziyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/teraziaslan.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/terazibaşak.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/teraziterazi.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/teraziakrep.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/teraziyay.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/terazioğlak.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/terazikova.png");}
+	if(document.form1.burç1.selectedIndex == 7 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/terazibalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/akrepkoç.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/akrepboğa.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/akrepikizler.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/akrepyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/akrepaslan.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/akrepbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/akrepterazi.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/akrepakrep.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/akrepyay.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/akrepoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/akrepkova.png");}
+	if(document.form1.burç1.selectedIndex == 8 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/akrepbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/yaykoç.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/yayboğa.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/yayikizler.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/yayyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/yayaslan.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/yaybaşak.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/yayterazi.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/yayakrep.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/yayyay.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/yayoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/yaykova.png");}
+	if(document.form1.burç1.selectedIndex == 9 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/yaybalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/oğlakkoç.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/oğlakboğa.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/oğlakikizler.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/oğlakyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/oğlakaslan.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/oğlakbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/oğlakterazi.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/oğlakakrep.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/oğlakyay.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/oğlakoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/oğlakkova.png");}
+	if(document.form1.burç1.selectedIndex == 10 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/oğlakbalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/kovakoç.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/kovaboğa.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/kovaikizler.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/kovayengeç.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/kovaaslan.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/kovabaşak.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/kovaterazi.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/kovaakrep.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/kovayay.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/kovaoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/kovakova.png");}
+	if(document.form1.burç1.selectedIndex == 11 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/kovabalık.png");}
+
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 1){kartImg.setAttribute("src", "/static/uyum/balıkkoç.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 2){kartImg.setAttribute("src", "/static/uyum/balıkboğa.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 3){kartImg.setAttribute("src", "/static/uyum/balıkikizler.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 4){kartImg.setAttribute("src", "/static/uyum/balıkyengeç.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 5){kartImg.setAttribute("src", "/static/uyum/balıkaslan.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 6){kartImg.setAttribute("src", "/static/uyum/balıkbaşak.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 7){kartImg.setAttribute("src", "/static/uyum/balıkterazi.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 8){kartImg.setAttribute("src", "/static/uyum/balıkakrep.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 9){kartImg.setAttribute("src", "/static/uyum/balıkyay.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 10){kartImg.setAttribute("src", "/static/uyum/balıkoğlak.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 11){kartImg.setAttribute("src", "/static/uyum/balıkkova.png");}
+	if(document.form1.burç1.selectedIndex == 12 && document.form1.burç2.selectedIndex == 12){kartImg.setAttribute("src", "/static/uyum/balıkbalık.png");}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+    body
+{  height: auto;
+	background:#00bcd4;
+}
+    .from{
+
+    }
+
+</style>
+
+<body class="first-info" >
+<br><br>
+
+	<div class="container">
+          <div class="row" style="margin-left:34%">
+
+        <form name="form1">
+            <table  >
+<td>
+            <select name="burç1" style="width: 10rem;height:3rem; margin-left:5px;background-color:#c8a2c8">
+                <option value="x" selected> Burç Seçiniz  &nbsp;</option>
+                <option value="1">Koç</option>
+                <option value="2">Boğa</option>
+                <option value="3">İkizler</option>
+                <option value="4">Yengeç</option>
+                <option value="5">Aslan</option>
+                <option value="6">Başak</option>
+                <option value="7">Terazi</option>
+                <option value="8">Akrep</option>
+                <option value="9">Yay</option>
+                <option value="10">Oğlak</option>
+                <option value="11">Kova</option>
+                <option value="12">Balık</option>
+            </select>
+ </td>
+                <td>
+            <select name="burç2" style="width: 10rem;height:3rem; margin-left:5px ;background-color:#c8a2c8">
+                <option value="y" selected> Burç Seçiniz  &nbsp;</option>
+                <option value="1">Koç</option>
+                <option value="2">Boğa</option>
+                <option value="3">İkizler</option>
+                <option value="4">Yengeç</option>
+                <option value="5">Aslan</option>
+                <option value="6">Başak</option>
+                <option value="7">Terazi</option>
+                <option value="8">Akrep</option>
+                <option value="9">Yay</option>
+                <option value="10">Oğlak</option>
+                <option value="11">Kova</option>
+                <option value="12">Balık</option>
+            </select>
+
+  </td>  </table>
+        </form>
+
+
+    </div>
+  </div>
+<div align="center">
+    <form action="#">
+		<input id="uyumButton"type="button" value="Uyumu Bul" />
+   </form>
+   <br/>
+	<img id="uyumkarti" src="/static/images/Adsız.png"  alt="uyum yorumu" >
+
+</div>
+</body>
+    <br><br><br><br><br>
+
+{% endblock  %}

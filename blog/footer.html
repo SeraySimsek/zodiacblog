@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+</head>
+
+<body >
+ <footer class="section footer-classic context-dark bg-image" style="background: #000000;">
+                <br>
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="/"><img src="/static/images/starlogo.jpg" alt="" width="64" height="64" s></a>
+                <p>Eğer sizde burçlar konusunda meraklı iseniz tam yerindesiniz. Bu sayfada burcunuzu bularak burçların özelliklerine kolayca ulaşabilirsiniz.</p>
+
+                <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Burçlar Evreni</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>İletişim</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>Meşrutiyet, Işık Ünv., 34980 Şile/İstanbul</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Email:</dt>
+                <dd>info@isikun.edu.tr</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Phone:</dt>
+                <dd>444 07 99</dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Linkler</h5>
+              <ul class="nav-list">
+                <li><a href="{% url 'hakkımızda' %}">Hakkımızda</a></li>
+
+                  {% if user.is_authenticated %}
+                    <li><a href="{% url 'iletişim' %}">İletişim</a></li>
+                    {% endif %}
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="https://tr-tr.facebook.com/isikuniversitesi"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="https://www.instagram.com/isikuniversitesi"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="https://twitter.com/FMVIsikUniv?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+
+        </div>
+      </footer>
+
+	<!-- ./Footer -->
+</body>
+</html>

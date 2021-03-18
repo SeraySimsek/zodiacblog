@@ -1,0 +1,56 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+
+
+    </script>
+
+</head>
+<style>
+    .first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+</style>
+
+
+<body class="first-info">
+<div class="row" style="margin-left: auto; margin-right: auto;">
+    {% for product in products %}
+    <div class="col-lg-4">
+        <br> <br> <br>
+        <img class="thumbnail" src="{{product.imageURL}}" style="margin-left:135px;">
+        <br><br>
+        <div class="box-element product">
+            <h6><strong>{{product.name}}</strong></h6>
+            <hr>
+
+
+            <button data-product="{{ product.id }}" data-action="add"
+                    class="btn btn-outline-secondary add-btn update-cart ">Sepete Ekle
+
+            </button>
+
+            <h4 style="display: inline-block; float: right"><strong> {{product.price|floatformat:2}} TL</strong></h4>
+
+
+        </div>
+    </div>
+    {% endfor %}
+
+
+</div>
+<br> <br> <br> <br>
+
+</body>
+{% endblock  %}

@@ -1,0 +1,62 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Burç/Fal Yorum sayfası</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
+
+</head>
+<style>
+       .first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+</style>
+<body class="first-info">
+<div class="container border p-5 my-5 rounded" style="background-color:#d6a3ef; width:50%; height:85%">
+
+
+    <center><h2>{% if content_type == 'B' %} Burç {% endif %} {% if content_type == 'F' %} Fal {% endif %} Yorumu
+        Yaz</h2></center>
+    <hr color="#681890">
+    <br>
+    {% if content_type == 'F' %}
+    <label><b>id:</b></label>
+    {{ fortune_telling.id }}
+    {% endif %}
+
+    <form role="form" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label><b>Başlık</b></label>
+            {{form.title}}
+        </div>
+        <div class="form-group">
+            <label><b>İçerik</b></label>
+            {{form.content}}
+        </div>
+        {% if content_type == 'B' %}
+        <div class="form-group">
+            <label><b>Burç</b></label>
+            {{form.zodiac_type}}
+        </div>
+        {% endif %}
+
+        <br>
+        <div class="form-group">
+            <button class="btn btn-dark btn-block" type="submit" style="background-color:#681890">Yorumunu Gönder
+            </button>
+        </div>
+    </form>
+</div>
+<br>
+</body>
+
+{% endblock %}

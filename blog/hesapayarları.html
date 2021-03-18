@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hesap ayarları</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/burçyorumlarım.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+</style>
+<body class="first-info">
+<div class="container" style="padding-top: 60px; color:white" >
+  <h1 class="page-header">Hesabım</h1>
+  <div class="row" >
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+        <img src="/static/images/user6.png" style="width:280px;height:280px;">
+        <h6>Yeni Fotoğraf Yükle...</h6>
+        <input type="file" class="text-center center-block well well-sm">
+      </div>
+    </div>
+    <form method="POST">
+    {% csrf_token %}
+
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+      <h3>Kişisel Bilgiler</h3>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-md-3 control-label">Kullanıcıadı:</label>
+          <div class="col-md-8">
+            <div>{{user.username}}</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">İsim:</label>
+          <div class="col-lg-8">
+            <div>{{form.name}}</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Soyisim:</label>
+          <div class="col-lg-8">
+            <div>{{form.lastname}}</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Burç:</label>
+          <div class="col-lg-8">
+            <div>{{form.zodiac}}</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-8">
+            <div>{{form.email}}</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input class="btn btn-primary" value="Kaydet" type="button">
+            &nbsp;
+
+            <input class="btn btn-default" value="İptal" type="reset">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    </form></div>
+</div>
+<br><br><br>
+</body>
+{% endblock %}
+</html>

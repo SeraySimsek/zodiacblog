@@ -1,0 +1,334 @@
+{% extends 'blog/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+<title>Yükselen Burç Hesaplama</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+
+<script language="javascript" type="text/javascript">
+ function burcbul() {
+ 			var b;
+            document.form1.gun.selectedIndex;
+            document.form1.ay.selectedIndex;
+            document.form1.saat.selectedIndex;
+            document.form1.burc.value=b;
+//oğlak
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Oğlak";}
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex <= 19 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Yay"; }
+//kova
+			if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 1 && document.form1.gun.selectedIndex >= 20) || (document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex <= 18 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Oğlak"; }
+
+
+
+//balık
+			if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 2 && document.form1.gun.selectedIndex >= 19) || (document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Kova"; }
+
+
+//koç
+			if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 3 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Balık"; }
+
+
+//boğa
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 4 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Koç"; }
+
+
+//ikizler
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 5 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Boğa"; }
+
+
+//yengeç
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 6 && document.form1.gun.selectedIndex >= 21) || (document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "İkizler"; }
+
+
+//aslan
+            if ((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22)|| (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21) ) { document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 7 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Yengeç"; }
+
+
+//başak
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 8 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Aslan"; }
+
+
+//terazi
+           	if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 9 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Başak"; }
+
+
+//akrep
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Akrep"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 10 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex <= 21 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Terazi"; }
+
+
+//yay
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 1){ document.form1.burc.value = "Yay"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 2){ document.form1.burc.value = "Oğlak"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 3){ document.form1.burc.value = "Kova"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 4){ document.form1.burc.value = "Balık"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 5){ document.form1.burc.value = "Koç"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 6){ document.form1.burc.value = "Boğa"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 7){ document.form1.burc.value = "İkizler"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 8){ document.form1.burc.value = "Yengeç"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 9){ document.form1.burc.value = "Aslan"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 10){ document.form1.burc.value = "Başak"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 11){ document.form1.burc.value = "Terazi"; }
+            if (((document.form1.ay.selectedIndex == 11 && document.form1.gun.selectedIndex >= 22) || (document.form1.ay.selectedIndex == 12 && document.form1.gun.selectedIndex <= 20 ))&& document.form1.saat.selectedIndex == 12){ document.form1.burc.value = "Akrep"; }
+
+             }
+
+
+
+
+
+</script>
+
+</head>
+<style>
+.first-info{
+    background-image: url( '/static/images/sky.jpg' ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+</style>
+
+<body class="first-info" >
+<div class="row" style="margin-left: 30% !important;margin-top:10%;">
+		<center><p><font  size="5" color="white" ><b><i>Yükselen Burç Hesaplama</i></b></font></p></center>
+
+	</div>
+<div class="row" style="margin-left: 30% !important;  ">
+
+<form name="form1" >
+
+<table border="0" bgcolor="d8b2d8" cellspacing="5" cellpadding="5">
+  <tr>
+    <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Ay&nbsp;</b></font>
+    </td>
+    <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Gün&nbsp;</b></font>
+    </td>
+	  <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Saat&nbsp;</b></font>
+    </td>
+    <td rowspan="2">
+        <font size="3" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;&nbsp;<b>:</b>&nbsp;</b></font>
+    </td>
+    <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Burç&nbsp;</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+                    &nbsp;<select name="ay">
+                    <option value="x" selected> Ay Seçiniz   &nbsp;</option>
+                    <option value="1">Ocak</option>
+                    <option value="2">Şubat</option>
+                    <option value="3">Mart</option>
+                    <option value="4">Nisan</option>
+                    <option value="5">Mayıs</option>
+                    <option value="6">Haziran</option>
+                    <option value="7">Temmuz</option>
+                    <option value="8">Ağustos</option>
+                    <option value="9">Eylül</option>
+                    <option value="10">Ekim</option>
+                    <option value="11">Kasım</option>
+                    <option value="12">Aralık</option>
+                    </select>
+    </td>
+    <td>
+                    &nbsp;<select name="gun" onChange="validate()">
+                    <option value="y" selected> Gün Seçiniz  &nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    </select>
+    </td>
+	   <td>
+                    &nbsp;<select name="saat">
+                    <option value="z" selected> Doğum saatiniz&nbsp;</option>
+                    <option value="1">05-07</option>
+                    <option value="2">07-09</option>
+                    <option value="3">09-11</option>
+                    <option value="4">11-13</option>
+                    <option value="5">13-15</option>
+                    <option value="6">15-17</option>
+                    <option value="7">17-19</option>
+                    <option value="8">19-21</option>
+                    <option value="9">21-23</option>
+                    <option value="10">23-01</option>
+                    <option value="11">01-03</option>
+                    <option value="12">03-05</option>
+                    </select>
+    </td>
+    <td>
+        &nbsp;<input name="burc" size="15" value="Yükselen Burcunuz" />&nbsp;<input type="button" value="Burç Bul" onClick="burcbul()">
+    </td>
+
+
+
+  </tr>
+
+</table>
+    <br><br>
+</form>
+
+
+</div>
+
+<div class="row" style="margin-left:28%;">
+{% include 'blog/burçblok.html' %}</div>
+
+</body>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+{% endblock content %}
